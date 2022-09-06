@@ -1,8 +1,9 @@
 import requests
 import shodan
 import optparse
+from termcolor import colored
 
-print('''
+print(colored('''
  ____  _               _             ____                      _     
 / ___|| |__   ___   __| | __ _ _ __ / ___|  ___  __ _ _ __ ___| |__  
 \___ \| '_ \ / _ \ / _` |/ _` | '_ \\___ \ / _ \/ _` | '__/ __| '_ \ 
@@ -10,7 +11,7 @@ print('''
 |____/|_| |_|\___/ \__,_|\__,_|_| |_|____/ \___|\__,_|_|  \___|_| |_|
 
 					by mohamed sayed @kanike99
-''')
+''', 'green'))
 
 def get_arguments():
     parser = optparse.OptionParser()
